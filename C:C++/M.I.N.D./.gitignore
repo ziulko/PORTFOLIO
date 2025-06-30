@@ -1,0 +1,33 @@
+# Kompilowane pliki binarne
+*.o
+*.out
+*.exe
+*.a
+*.so
+
+# Plik wykonywalny programu
+mind
+
+# Pliki tymczasowe i logi
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Katalogi tymczasowe (np. CMake lub Make)
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+compile_commands.json
+
+# Visual Studio Code
+.vscode/
+
+# CLion i inne IDE
+.idea/
+
+# System plików macOS i inne
+.DS_Store
+Thumbs.db
