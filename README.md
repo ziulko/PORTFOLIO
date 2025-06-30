@@ -1,15 +1,36 @@
 # Portfolio
-A repository for my side projects that I work on in my free time while looking for an internship ;p
 
-Repository Description:
+This repository contains side projects I work on during my free time while actively looking for an internship.
 
-This repository is structured into multiple folders, each dedicated to a specific programming language. Within these folders, I’ve built a variety of projects covering different areas such as machine learning (ML), artificial intelligence (AI), web development, cybersecurity, and general software engineering.
+## Repository Description
 
-Throughout these projects, I actively apply various technologies and tools including SQL, Hibernate, data standardization and cleansing, graph construction and analysis, REST APIs, as well as basic cloud concepts. The repository reflects my continuous learning process and my interest in exploring different aspects of computer science, full-stack development, data processing, and backend engineering.
+The repository is structured into multiple folders, each focusing on a specific programming language or domain. It includes a variety of projects related to:
 
-The projects demonstrate not only my coding skills but also my ability to work with diverse tech stacks, apply best practices, and design solutions with scalability, maintainability, and data integrity in mind.
+- Machine Learning (ML)
+- Artificial Intelligence (AI)
+- Web Development
+- Cybersecurity
+- General Software Engineering
 
-⚠ Note: This repository is still a work in progress. Some projects are still being finalized or are ready to be added. I am continuously expanding the repository as I complete, polish, and document additional projects.
+## Technologies and Concepts Used
 
-Feedback welcome:
-If you have any suggestions, feedback, or ideas regarding these projects, feel free to reach out — I’d be happy to discuss and learn from your insights!
+The projects demonstrate use of:
+
+- SQL and relational databases
+- Hibernate and other ORM tools
+- Data standardization and cleaning
+- Graph construction and traversal
+- RESTful API design
+- Cloud concepts (basic)
+- Efficient use of system resources (memory, CPU, threads)
+- Modular and scalable architecture design
+
+These projects reflect my interest in full-stack and backend development, data engineering, and systems programming. I aim to create solutions that are maintainable, efficient, and aligned with best practices.
+
+## Status
+
+This portfolio is a work in progress. Some projects are still being finalized or will be added later. Others may lack full documentation or testing but are under active development.
+
+## Feedback
+
+Suggestions, ideas, or constructive feedback are always welcome. Feel free to reach out or open an issue.
