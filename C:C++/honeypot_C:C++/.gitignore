@@ -1,0 +1,26 @@
+# Build system (CMake)
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# Compiled binary / output
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.out
+
+# CLion specific
+.idea/
+*.iml
+
+# Logs and generated session files
+honeypot_logs/
+
+# Misc
+*.log
+*.tmp
+.DS_Store
