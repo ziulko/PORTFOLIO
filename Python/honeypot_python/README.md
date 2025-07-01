@@ -134,7 +134,7 @@ This project is under **active development** and serves as an educational protot
 ---
 ## Related Projects
 
-- [C/C++ Honeypot Version](https://github.com/ziulko/PORTFOLIO/tree/main/Python/honeypot_python)
+- [C/C++ Honeypot Version](https://github.com/ziulko/PORTFOLIO/tree/main/C%3AC%2B%2B/honeypot_C%3AC%2B%2B)
 ---
 
 ## Feedback
