@@ -132,6 +132,10 @@ Use `--test` flag or menu option `[4]`. The program will simulate 5-20 random co
 This project is under **active development** and serves as an educational prototype. Support for other languages and network behaviors may be added.
 
 ---
+## Related Projects
+
+- [C/C++ Honeypot Version](https://github.com/ziulko/PORTFOLIO/tree/main/Python/honeypot_python)
+---
 
 ## Feedback
 
