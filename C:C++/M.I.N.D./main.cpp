@@ -1,10 +1,16 @@
+// main.cpp
 #include "ComputationModule.hpp"
 #include "MonteCarloPi.hpp"
+#include "PrimeFinder.hpp"
 #include <iostream>
 #include <vector>
 #include <memory>
 #include <fstream>
 #include <string>
+#ifdef __APPLE__
+#include <sys/types.h>
+#include <sys/sysctl.h>
+#endif
 
 size_t get_total_memory_mb() {
 #ifdef __linux__
@@ -21,6 +27,11 @@ size_t get_total_memory_mb() {
         }
     }
     return mem_kb / 1024;
+#elif __APPLE__
+    int64_t mem_bytes;
+    size_t size = sizeof(mem_bytes);
+    sysctlbyname("hw.memsize", &mem_bytes, &size, nullptr, 0);
+    return static_cast<size_t>(mem_bytes / (1024 * 1024));
 #else
     return 2048;
 #endif
@@ -29,6 +40,7 @@ size_t get_total_memory_mb() {
 int main() {
     std::vector<std::unique_ptr<ComputationModule>> modules;
     modules.emplace_back(std::make_unique<MonteCarloPi>());
+    modules.emplace_back(std::make_unique<PrimeFinder>());
 
     size_t total_ram = get_total_memory_mb();
     size_t allowed_ram = total_ram * 60 / 100;
@@ -58,20 +70,38 @@ int main() {
         return 1;
     }
 
-    int precision;
-    std::cout << "\nIle miejsc po przecinku obliczyć wartość π? ";
-    std::cin >> precision;
+    int param = 0;
+    int timeout = 60;
+    bool fixed_seed = false;
+    bool full_output = false;
 
-    int timeout;
-    std::cout << "\nUstaw maksymalny czas trwania pojedynczego obliczenia (sekundy): ";
-    std::cin >> timeout;
+    std::string module_name = modules[choice - 1]->name();
 
-    char use_seed;
-    std::cout << "\nCzy chcesz użyć stałego ziarna RNG (y/n)? ";
-    std::cin >> use_seed;
+    if (module_name == "Monte Carlo π Estimator") {
+        std::cout << "\nIle miejsc po przecinku obliczyć wartość π? ";
+        std::cin >> param;
 
-    bool fixed_seed = (use_seed == 'y' || use_seed == 'Y');
-    modules[choice - 1]->run(limit, precision, timeout, fixed_seed);
+        std::cout << "\nUstaw maksymalny czas trwania pojedynczego obliczenia (sekundy): ";
+        std::cin >> timeout;
+
+        char use_seed;
+        std::cout << "\nCzy chcesz użyć stałego ziarna RNG (y/n)? ";
+        std::cin >> use_seed;
+        fixed_seed = (use_seed == 'y' || use_seed == 'Y');
+    } else if (module_name == "Prime Number Finder") {
+        std::cout << "\nPodaj górną granicę przedziału do sprawdzenia liczb pierwszych: ";
+        std::cin >> param;
+
+        std::cout << "\nUstaw maksymalny czas trwania pojedynczego obliczenia (sekundy): ";
+        std::cin >> timeout;
+
+        char output_choice;
+        std::cout << "\nCzy wypisać wszystkie znalezione liczby pierwsze? (y = wszystkie / n = tylko 10 ostatnich): ";
+        std::cin >> output_choice;
+        full_output = (output_choice == 'y' || output_choice == 'Y');
+    }
+
+    modules[choice - 1]->run(limit, param, timeout, fixed_seed, full_output);
 
     return 0;
 }

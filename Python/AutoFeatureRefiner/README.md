@@ -6,7 +6,7 @@
 
 The tool is especially useful for prototyping ML workflows and exploring different preprocessing strategies without writing boilerplate code.
 
-⚠ **Note**: This project is in an early, non-final state. Some parts of the logic (e.g., feature ranking, iterative learning, explainability) are still under active development and may not behave optimally across all datasets. Expect instability or incomplete features.
+>⚠ **Note**: This project is in an early, non-final state. Some parts of the logic (e.g., feature ranking, iterative learning, explainability) are still under active development and may not behave optimally across all datasets. Expect instability or incomplete features.
 
 ---
 

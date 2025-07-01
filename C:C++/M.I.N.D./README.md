@@ -6,7 +6,7 @@
 
 The goal is to offer an extensible environment where multiple computational modules (such as π estimation, prime search, numerical integration) can be run independently with adjustable memory and performance parameters.
 
-⚠️ **Note:** M.I.N.D is currently in an early development stage. Only a single module (Monte Carlo π Estimator) is implemented. More modules and resource policies are planned for future versions.
+>⚠ **Note:** M.I.N.D is currently in an early development stage. Only a single module (Monte Carlo π Estimator) is implemented. More modules and resource policies are planned for future versions.
 
 ---
 

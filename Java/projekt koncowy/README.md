@@ -1,52 +1,62 @@
 # Auto Workshop "WEB"
-# Project Description
 
-Auto Workshop "WEB" is a lightweight web application tailored for small auto repair shops. Its primary goal is to assist mechanics and shop staff in managing daily operations, such as tracking inventory, maintaining client vehicle records, logging service history, planning future visits, and ordering necessary parts.
+A lightweight web application designed for small auto repair shops to streamline daily operations and improve internal efficiency.
 
-The current version focuses on the mechanic's interface, providing essential tools for internal shop management. Support for client interaction and more user roles is planned for future development.
+---
 
-⚠ Note: This project is a work in progress. Some features are still being finalized or in early stages of implementation. Expect changes as the application evolves.
+## Project Overview
 
-# Current Features
+**Auto Workshop "WEB"** is a tool tailored for auto mechanics and workshop staff. It enables seamless management of:
 
-Internal panel for mechanic use
+- Parts inventory  
+- Client vehicle records  
+- Service history logs  
+- Future appointments  
+- Ordering required components  
 
-Manage inventory of parts and components
+The current version focuses on the internal mechanic interface. Future updates will introduce client interaction modules and support for multiple user roles.
 
-Track client vehicles and their full service history
+> Note: This project is still under development. Features may change or expand as the application matures.
 
-Schedule and log future visits
+---
 
-Order new parts directly from the system
+## Current Features
 
-# Planned Features
+- Internal dashboard for mechanic use  
+- Inventory management (parts & components)  
+- Vehicle tracking with complete service history  
+- Scheduling and logging future visits  
+- Direct ordering of parts from the system  
 
-Client-side login and interaction portal
+---
 
-Role-based access (e.g., Admin, Front Desk, Mechanic)
+## Roadmap & Planned Features
 
-Persistent external database integration
+- Client portal with login functionality  
+- Role-based access control (Admin, Mechanic, Front Desk, etc.)  
+- Integration with a persistent external database  
+- Smart service scheduling with reminders  
+- Real-time service status tracking and client notifications  
 
-Advanced service scheduling and automated reminders
+---
 
-Service status tracking and client notifications
+## Tech Stack
 
-# Technologies Used
+- Language: Java  
+- ORM: Hibernate  
+- Database: In-Memory DB (for development only)  
+- (Optional: Spring, Maven – add if applicable)  
 
-Java
+---
 
-Hibernate for ORM
+## Development Notes
 
-In-Memory Database (development only)
+- Uses an in-memory database to support rapid prototyping (data resets on each restart).  
+- Built with modular architecture to support future scaling and feature expansion.
 
-(Optional: add frameworks/tools like Spring, Maven, etc., if applicable)
+---
 
-# Development Notes
+## Feedback & Contributions
 
-Currently uses an in-memory database for rapid prototyping. All data resets on restart.
-Designed with modularity and future expansion in mind.
-
-# Feedback Welcome
-
-If you have any suggestions, feedback, or ideas for improving Auto Workshop "WEB", feel free to reach out! I'm always open to constructive input, whether it's design tips, performance suggestions, or new feature ideas.
-
+Your input is highly valued! If you have suggestions, ideas, or feedback — whether technical or design-related — don’t hesitate to share.  
+Together, we can make Auto Workshop "WEB" even better.

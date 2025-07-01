@@ -15,7 +15,7 @@ public:
         return "Monte Carlo π Estimator";
     }
 
-    void run(size_t memory_limit_mb, int decimal_precision = 5, int timeout_seconds = 60, bool fixed_seed = false) override {
+    void run(size_t memory_limit_mb, int decimal_precision = 5, int timeout_seconds = 60, bool fixed_seed = false, bool = false) override {
         std::atomic<long long> inside_circle(0);
         std::atomic<long long> total_points(0);
         int threads_count = std::thread::hardware_concurrency();
