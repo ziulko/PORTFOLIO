@@ -1,0 +1,49 @@
+# Środowisko wirtualne
+.venv/
+venv/
+env/
+ENV/
+
+# Pliki Pythona
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Pliki logów i cache
+*.log
+*.tmp
+*.cache/
+.cache/
+*.sqlite3
+*.db
+
+# Dane użytkownika / sesji
+.history/
+.history.json
+memory_store.json
+conversation_history.json
+
+# Dane Ollama (globalne, ale dla bezpieczeństwa)
+ollama/
+.ollama/
+
+# Dane aplikacji
+data/knowledge_base/*
+!data/knowledge_base/.keep
+
+# MacOS / systemowe
+.DS_Store
+Thumbs.db
+
+# PyCharm / VSCode
+.idea/
+.vscode/
+*.code-workspace
+
+# Pliki tymczasowe i testowe
+*.bak
+*.swp
+*.tmp
+*.orig
